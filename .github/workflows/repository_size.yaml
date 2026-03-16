@@ -2,12 +2,13 @@ on:
   push:
     branches: [main]
 jobs:
-  runs-on: ubuntu-24.04
-  steps:
-    - name: checkout
-      run: actions/checkout@v4
-    - name:  Repo Name
-      run: echo "Le nom du repo est ${{github.ref_name}}
-    - name: Size repo cmd
-      run: du -skh --excludd=".git"
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout
+        run: actions/checkout@v4
+      - name:  Repo Name
+        run: echo "Le nom du repo est ${{github.ref_name}}
+      - name: Size repo cmd
+        run: du -skh --excludd=".git"
   
