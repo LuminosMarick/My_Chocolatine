@@ -5,7 +5,7 @@ jobs:
   runs-on: ubuntu-24.04
   steps:
     - name: Check
-    - run: git branch --show-current
-    - run: du -skh --exclude=".git"
+    - run: git branch
+    - run: du -skh --excludd=".git"
       uses: actions/checkour@v4
   
