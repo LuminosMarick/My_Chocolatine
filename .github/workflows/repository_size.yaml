@@ -4,8 +4,10 @@ on:
 jobs:
   runs-on: ubuntu-24.04
   steps:
-    - name: Name
-    - run: git symbolic-ref --short HEAD
-    - run: du -skh --excludd=".git"
-      uses: actions/checkour@v4
+    - name: checkout
+      run: actions/checkout@v4
+    - name:  Repo Name
+      run: echo "Le nom du repo est ${{github.ref_name}}
+    - name: Size repo cmd
+      run: du -skh --excludd=".git"
   
