@@ -1,0 +1,11 @@
+on:
+  push:
+    branches: [main]
+jobs:
+  runs-on: ubuntu-24.04
+  steps:
+    - name: Check
+    - run: git branch --show-current
+    - run: du -skh --exclude=".git"
+      uses: actions/checkour@v4
+  
