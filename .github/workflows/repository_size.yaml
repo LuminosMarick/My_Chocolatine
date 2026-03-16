@@ -10,5 +10,5 @@ jobs:
       - name:  Repo Name
         run: echo "Le nom du repo est ${{github.ref_name}}
       - name: Size repo cmd
-        run: du -skh --excludd=".git"
+        run: du -skh --exclude=".git"
   
