@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
       - name:  Repo Name
-        run: echo "Le nom du repo est ${{github.ref_name}}
+        run: echo "Le nom du repo est ${{github.ref_name}}"
       - name: Size repo cmd
-        run: du -skh --exclude=".git"
+        run: du -skh . --exclude=".git"
   

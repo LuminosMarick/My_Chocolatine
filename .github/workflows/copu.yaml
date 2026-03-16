@@ -1,4 +1,4 @@
-name: Mirroring
+vname: Mirroring
 
 on: [push, delete]
 
