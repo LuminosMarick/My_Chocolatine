@@ -5,7 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - name: checkout
+      - name: Checkout
         run: actions/checkout@v4
       - name:  Repo Name
         run: echo "Le nom du repo est ${{github.ref_name}}
