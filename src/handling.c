@@ -24,9 +24,8 @@ void handle_line(char *line, char **env, int *status)
         free_argv(argv);
         return;
     }
-    if (my_strcmp(argv[0], "42") == 0) {
+    if (my_strcmp(argv[0], "42") == 0)
         print_sentence();
-    }
     if (my_strcmp(argv[0], "exit") == 0) {
         free_argv(argv);
         exit(*status);
