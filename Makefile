@@ -4,7 +4,7 @@
 ## File description:
 ## Made By Ozy
 ##
-CC      =       clang
+CC      =       epiclang
 
 SRC	=	src/built_in.c \
                 src/parsing.c \
